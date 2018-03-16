@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>seller item detail page</title>
+		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link href="/css/bootstrap.css" rel="stylesheet">
+ 		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+ 		<link href="/css/index_itemDetail.css" rel="stylesheet">
+
+ 		<!-- Use internet source for icons-->
+ 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class = "container">
+ 			<div>
+ 				<table>
+ 					<td><div class="topIcon"><a href="seller_addFromHistory"><i class="material-icons" style="font-size:50px;">backspace</i></a></div></td>
+ 					<td><h2>Details</h2></td>
+ 				</table>
+ 			</div>
+
+
+			<form id="addFromHistory" role="form" method="get" action="/add">
+ 			<div class="details">
+ 			<table>
+ 				<td>
+ 					<div id="itemPic"><img src="{{imageURL}}">
+
+						<label hidden for="imageURL">Hi</label>
+						<input hidden type="text" value="{{imageURL}}" name="imageURL" id='imageURL'>
+
+					</div>
+ 				</td>
+ 				<td>
+ 					<table>
+					<tr>
+      					<td colspan="2">
+									<label for="name">Food Name</label>
+				     	 		<input type="text" class="form-control" id="name" value="{{name}}" name="name">
+      					</td>
+      					<td></td>
+      				</tr>
+      				<tr>
+						<td>
+						<label for="price">Price</label>
+						<input type="text" class="form-control" id="price" value="{{price}}" name="price">
+					<label for="pickupTime">Pickup Time</label>
+					<input type="text" class="form-control" id="pickupTime" value="{{pickupTime}}" name="pickupTime">
+      					</td>
+      				</tr>
+					</table>
+ 				</td>
+ 			</table>
+
+ 			<table>
+ 				<td>
+ 					<h3 class="info"><label for="pickupLocation">Pickup At</label>
+					<input style="width: 250px;" type="text" class="form-control" id="pickupLocation" value="{{pickupLocation}}" name="pickupLocation">
+ 				</td>
+ 				<td>
+ 					<a href="https://google.com/maps"><div class="topIcon"><i class="material-icons" style="font-size:50px;">location_on</i></div></a>
+ 				</td>
+ 			</table>
+			<h3 class="info"><label for="description">Description</label>
+			<input style="width: 300px;" type="text" class="form-control" id="description" value="{{description}}" name="description">
+
+
+			<hr>
+			<center><input style="margin-left:20px;" type="submit" id="submitBtn" class="btn btn-default" value="Add Item"></input></center>
+			</form>
+
+		</div>
+
+
+ 		</div>
+
+ 	<script src="/js/jquery-1.11.0.js"></script>
+ 	<script src="/js/bootstrap.js"></script>
+	 		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115397636-1"></script>
+		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+			gtag('config', 'UA-115397636-1');
+		</script>
+	</body>
+</html>

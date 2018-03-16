@@ -1,0 +1,146 @@
+<html>
+	<head>
+ 		<title>Item Detail</title>
+ 		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link href="/css/bootstrap.css" rel="stylesheet">
+ 		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+ 		<link href="/css/index_itemDetail.css" rel="stylesheet">
+
+ 		<!-- Use internet source for icons-->
+ 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<script>var i = location.href.substring(location.href.indexOf("?")+1);
+	  console.log(i);</script>
+	</head>
+
+	<body>
+
+ 		<div class = "container">
+ 			<div id="myHeader" class="header">
+ 				<table>
+ 					<td>
+						 <div class="topIcon"><a href="./buyer_home"><i class="material-icons" style="font-size:50px;">backspace</i></a></div>
+					</td>
+ 					<td>
+						 <h2>Details</h2>
+					</td>
+ 				</table>
+ 			</div>
+
+ 			<div class="details">
+			<div id="box">
+ 			<table>
+ 				<td>
+ 					<div id="itemPic"><img src={{imageURL}}></div>
+					<!--<a href="buyer_itemPhotos">more photos ...</a>-->
+ 				</td>
+ 				<td>
+ 					<table>
+						<tr>
+							<td colspan="2">
+								<h4 class = "item_name">{{name}}</h4>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<p>Price: <strong>{{price}}</strong></p>
+								<p>Distance: <strong>{{distance}}</strong></p>
+							</td>
+							<td>
+								<p>Seller Rating: <strong>{{sellerRating}}</strong></p>
+								<p>Pickup Time: <strong>{{pickupTime}}</strong></p>
+							</td>
+						</tr>
+					</table>
+ 				</td>
+ 			</table>
+			</div>
+
+			<hr>
+
+
+ 			<table>
+ 				<td>
+ 					<h3 class="info">Offered by</h3>
+					<p class="text">{{seller}}</p>
+ 				</td>
+ 				<td id="callAndText">
+ 					<a href="tel:0000000000"><i class="material-icons" style="font-size:50px;">call</i></a>
+ 					<a href="sms:0000000000"><i class="material-icons" style="font-size:50px;">textsms</i></a>
+ 				</td>
+ 			</table>
+
+ 			<table>
+ 				<td>
+ 					<h3 class="info">Pickup at</h3>
+ 					<p class="text">{{pickupLocation}}</p>
+ 				</td>
+ 				<td>
+ 					<a href="https://www.google.com/maps"><div class="topIcon"><i class="material-icons" style="font-size:50px;">location_on</i></div>
+					</a>
+ 				</td>
+ 			</table>
+
+ 			<h3 class="info">Pickup Time</h3>
+			<p class="text">{{pickupTime}}</P>
+
+
+ 			<h3 class="info">Come and Learn to Cook This Item Allowed</h3>
+			<p class="text">{{learn}}</p>
+
+ 			<h3 class="info">Description</h3>
+ 			<p class="text">{{description}}</p>
+
+			<div id="myFooter" class="footer">
+
+			<hr>
+
+			<!-- <table>
+ 				<th>
+ 					Number of Ordering:
+ 				</th>
+ 				<td>
+ 					<i class="material-icons" style="font-size:50px;">chevron_left</i>
+ 				</td>
+ 				<td>
+ 					01
+ 				</td>
+ 				<td>
+ 					<i class="material-icons" style="font-size:50px;">chevron_right</i>
+ 				</td>
+ 			</table> -->
+
+ 			<center><table>
+ 				<td id="total">
+ 					TOTAL PRICE:
+ 					<strong>{{price}}</strong>
+ 				</td>
+ 				<td>
+        <form id="placeOrder" role="form" method="get" action="/order">
+ 					<input type="submit" id="submitBtn" class="btn btn-default" value="PLACE ORDER"></input>
+				</form>
+ 				</td>
+ 			</table></center>
+
+			<br>
+			</div>
+
+ 			</div>
+
+ 		</div>
+
+ 	<script src="/js/jquery-1.11.0.js"></script>
+ 	<script src="/js/bootstrap.js"></script>
+ 	<script src="/js/userHome.js"></script>
+	 		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115397636-1"></script>
+		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+			gtag('config', 'UA-115397636-1');
+		</script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+a {
+	color: #39845b;
+}
+.topIcon {
+	padding-top: 12px;
+}
+
+#photo {
+	width: 128px;
+	margin-right: 20px;
+}
+
+img {
+	border-radius: 15px;
+	border: 1px solid #39845b;
+}
+
+#accountPic {
+	padding-right: 10px;
+}
+
+#myHeader {
+	padding-bottom: 20px;
+}
+
+.details {
+	padding-left: 10px;
+}
+
+#payment {
+	padding-left: 10px;
+	padding-top: 20px;
+}
+
+#edit{
+	color:#39845b;
+}
+
+h2,h3,h4{
+	color:#39845b;
+}
+
+#edit{
+	color: #39845b;
+}
+
+#check{
+	color:#39845b;
+}
